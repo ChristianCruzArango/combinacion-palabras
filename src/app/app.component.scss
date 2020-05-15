@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.snip1336 {
+    font-family: 'Roboto', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 1px;
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 480px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+    background-color: #141414;
+    float: left;
+    margin-left: 5px;
+}
+
+.snip1336 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.pre-scrollable{
+    max-height: 430px;
+}
+
+.snip1336 img {
+    max-width: 100%;
+    vertical-align: top;
+    opacity: 0.85;
+}
+
+.snip1336 figcaption {
+    width: 100%;
+    background-color: #141414;
+    padding: 25px;
+    position: relative;
+}
+
+.snip1336 figcaption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent #141414;
+}
+
+.snip1336 figcaption a {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    color: #e2dbdb;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+    opacity: 0.65;
+    width: 47%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #f0f0f0 !important;
+}
+
+.snip1336 figcaption a:hover {
+    opacity: 1;
+}
+
+.snip1336 .profile {
+    border-radius: 48%;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    z-index: 1;
+    max-width: 150px;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(235, 230, 230, 0.3);
+}
+
+.snip1336 .follow {
+    margin-right: 4%;
+    border-color: #2980b9;
+    color: #2980b9;
+}
+
+.snip1336 h2 {
+    margin: 0 0 5px;
+    font-weight: 300;
+}
+
+.snip1336 h2 span {
+    display: block;
+    font-size: 0.9em;
+    color: #e43e3e;
+}
+
+.snip1336 p {
+    margin: 0 0 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+$font: 'Lato',
+sans-serif;
+$white: #ffffff;
+$black: #000000;
+$orange: #e7693b;
+$blue: #81CCE8;
+$ease: all .3s ease;
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+
+input[type=search] {
+    box-shadow: 10px 10px 4px rgba($black, .4);
+    background: $white;
+    border: 2px solid $orange;
+    outline: none;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 0px 10px;
+    font-family: $font;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+::placeholder {
+    color: $blue;
+    font-size: .8em;
+}
+
+.search-btn {
+    box-shadow: 10px 10px 4px rgba($black, .4);
+    height: 50px;
+    width: 55px;
+    outline: none;
+    border-radius: 0 15px 15px 0;
+    background: $orange;
+    color: $white;
+    border: none;
+    transition: $ease;
+    &:hover {
+        transition: $ease;
+        i {
+            font-size: 2.5em;
+        }
+    }
+    i {
+        font-size: 2.3em;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: $font;
+    color: $orange;
+    p {
+        letter-spacing: 3px;
+        font-size: 10px;
+        color: $white;
+    }
+    a {
+        color: $black;
+        text-decoration: none;
+        transition: $ease;
+        padding: 3px;
+        &:hover {
+            background: $orange;
+            color: $white;
+            padding: 3px;
+            transition: $ease;
+        }
+    }
+}
+
+.listado h2{
+
+  background-color: black;
+
+}
+
+table {
+	width: 750px;
+	border-collapse: collapse;
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+	background: #eee;
+	}
+
+th {
+	background: #3498db;
+	color: white;
+	font-weight: bold;
+	}
+
+td, th {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: left;
+	font-size: 18px;
+	}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table {
+	  	width: 100%;
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
